@@ -7,6 +7,6 @@ build:
     web: Dockerfile
   config:
     WORKDIR: app
-    API_URL: "https://planner-app-api.herokuapp.com"
+    API_URL: "https://planner-app-api-ddb752cd610c.herokuapp.com"
 run:
   web: yarn run start
