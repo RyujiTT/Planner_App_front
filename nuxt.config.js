@@ -38,6 +38,8 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     "@nuxtjs/axios",
+    // https://www.npmjs.com/package/@nuxtjs/i18n
+    "@nuxtjs/i18n",
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -64,6 +66,29 @@ export default {
           error: "FB8678",
           background: "f6f6f4",
         },
+      },
+    },
+  },
+
+  // Doc: https://nuxt-community.github.io/nuxt-i18n/basic-usage.html#nuxt-link
+  i18n: {
+    // 対応言語の指定
+    locales: ["ja", "en"],
+    // デフォルトで使用する言語を指定
+    defaultLocale: "ja",
+    // Doc: https://kazupon.github.io/vue-i18n/api/#properties
+    vueI18n: {
+      // 翻訳対象がない場合に参照される言語
+      fallbackLocale: "ja",
+      // true => i18nの警告を完全に表示しない(default: false)
+      // silentTranslationWarn: true,
+      // フォールバック時に警告を発生させる(default: false)
+      // true => 警告を発生させない(翻訳のキーが存在しない場合のみ発生)
+      silentFallbackWarn: true,
+      // 翻訳データを指定
+      messages: {
+        ja: require("./locales/ja.json"),
+        en: require("./locales/en.json"),
       },
     },
   },
