@@ -69,6 +69,7 @@ export default {
           warning: "FEB65E",
           error: "FB8678",
           background: "f6f6f4",
+          myblue: "1867C0",
         },
       },
     },
