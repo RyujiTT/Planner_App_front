@@ -81,6 +81,7 @@ export default {
     locales: ["ja", "en"],
     // デフォルトで使用する言語を指定
     defaultLocale: "ja",
+    strategy: "no_prefix",
     // Doc: https://kazupon.github.io/vue-i18n/api/#properties
     vueI18n: {
       // 翻訳対象がない場合に参照される言語
