@@ -4,7 +4,7 @@
       <v-form v-model="isValid">
         <user-form-name :name.sync="params.user.name" />
 
-        <user-form-email :email.sync="params.user.email" />
+        <user-form-email :email.sync="params.user.email" placeholder />
 
         <user-form-password :password.sync="params.user.password" />
         <v-btn :disabled="!isValid" block color="myblue" class="white--text">
