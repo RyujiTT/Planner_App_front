@@ -8,8 +8,8 @@
 
     <v-spacer />
 
-    <app-sign-up-button />
-    <app-login-button />
+    <before-login-app-bar-signup-button />
+    <before-login-app-bar-login-button />
   </v-app-bar>
 </template>
 

@@ -54,7 +54,7 @@
     </v-col>
     <v-snackbar v-model="sentIt" timeout="-1" color="primary">
       お問合せ内容が送信されました。メールアドレスへ担当者よりご連絡いたします。
-      <template v-slot:action="{ attrs }">
+      <template #action="{ attrs }">
         <v-btn color="white" text v-bind="attrs" @click="formReset">
           Close
         </v-btn>
