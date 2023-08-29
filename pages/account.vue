@@ -5,7 +5,7 @@
       small
       plain
       color="primary"
-      to="$my.projectLinkTo(currentProject.id, dashboardPath)"
+      :to="$my.projectLinkTo(currentProject.id, dashboardPath)"
     >
       <v-icon> mdi-chevron-double-left</v-icon>
       {{ $my.pageTitle(dashboardPath) }}に戻る
