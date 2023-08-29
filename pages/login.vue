@@ -30,20 +30,18 @@
 <script>
 export default {
   layout: "before-login",
-  data() {
+  data({ $store }) {
     return {
       isValid: false,
       loading: false,
       params: { user: { email: "", password: "" } },
+      redirectPath: $store.state.loggedIn.redirectPath,
     };
   },
   methods: {
     login() {
       this.loading = true;
-      setTimeout(() => {
-        this.formReset();
-        this.loading = false;
-      }, 1500);
+      this.$router.push(this.redirectPath);
     },
     formReset() {
       this.$refs.form.reset();
