@@ -1,6 +1,6 @@
 <template>
   <v-app-bar app dense elevation="1" clipped-left color="white">
-    <nuxt-link to="redirectPath" class="text-decoration-none">
+    <nuxt-link to="homePath" class="text-decoration-none">
       <app-logo />
     </nuxt-link>
 
@@ -16,7 +16,7 @@
 export default {
   data({ $store }) {
     return {
-      redirectPath: $store.state.loggedIn.redirectPath,
+      homePath: $store.state.loggedIn.homePath,
     };
   },
 };
