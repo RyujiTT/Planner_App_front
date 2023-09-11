@@ -10,5 +10,7 @@
 </template>
 
 <script>
-export default {};
+export default {
+  middleware: ["logged-in-redirect"],
+};
 </script>
